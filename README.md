@@ -12,4 +12,8 @@ echo -n "FLAG-SUPERSECRETFLAG" | md5sum | cut -b-32 -z | sha256sum | cut -b-64 -
 
 This would output `78d178916fbd806043a43e04081fcc12`, so to unzip the file, use that as the password.
 
-Alternatively, use the `open.sh` script provided.  Specify the challenge number and flag (in plaintext) and if it is correct, it will be extracted for you.
+Alternatively, use the `open.sh` script provided.  Specify the challenge number and flag (in plaintext) and if it is correct, it will be extracted for you.  For example,
+
+```Bash
+./open.sh 999 "FLAG-SUPERSECRETFLAG"
+```
